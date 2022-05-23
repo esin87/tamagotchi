@@ -25,6 +25,7 @@
 
 ### Bronze
 
+- As a user, I want to be able to refer to the instructions throughout the game. ("How to play button")
 - "As a player it's nice to not have my tamagotchi suffer because my life got too busy."
 - "As a player I like to have choices for what to feed my tamagotchi."
 - "I liked when the app greets me with fanfare and confetti!"
