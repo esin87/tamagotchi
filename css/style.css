@@ -19,6 +19,14 @@ h1 {
     font-size: 3rem;
 }
 
+h2 { 
+    font-size: 2rem;
+}
+
+.hide { 
+    display: none;
+}
+
 /* Flex Styles */
 
 .flex-container { 
@@ -34,4 +42,25 @@ h1 {
 .game-container { 
     background: url('../assets/park-background.webp') no-repeat center center;
     height: 70vh;
+}
+
+/* Modal Styles */
+.modal-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(255,255,255, 0.9)
+}
+
+.modal-inner { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9d2c5;
+    padding: 2em;
+    box-shadow: 4px 1px 10px 0px #dadada;
+    border-radius: 4px;
 }
