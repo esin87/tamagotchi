@@ -5,34 +5,42 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=VT323&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Tamagotchi</title>
 		<script defer src="./js/script.js"></script>
 	</head>
 	<body>
-		<header>
-			<h1>Tamagotchi</h1>
-		</header>
-		<main>
-			<div class="stats-container">
-				<h2>Stats</h2>
-				<ul>
-					<li>Age: <span>0</span></li>
-					<li>Hunger: <span>0</span></li>
-					<li>Sleepiness: <span>0</span></li>
-					<li>Boredom: <span>0</span></li>
-				</ul>
-			</div>
-			<div class="tamagotchi-container"></div>
-			<div class="controls-container">
-				<h2>Controls</h2>
-				<button>Play</button>
-				<button>Feed</button>
-				<button>Sleep</button>
-			</div>
-		</main>
-		<footer>&copy; 2022 SEIR-509</footer>
+		<div class="wrapper">
+			<header>
+				<h1>Tamagotchi</h1>
+			</header>
+			<main class="game-container flex-container space-between">
+				<div class="stats-container">
+					<h2>Stats</h2>
+					<ul>
+						<li>Age: <span>0</span></li>
+						<li>Hunger: <span>0</span></li>
+						<li>Sleepiness: <span>0</span></li>
+						<li>Boredom: <span>0</span></li>
+					</ul>
+				</div>
+				<div class="tamagotchi-container"></div>
+				<div class="controls-container">
+					<h2>Controls</h2>
+					<button>Play</button>
+					<button>Feed</button>
+					<button>Sleep</button>
+				</div>
+			</main>
+			<footer>&copy; 2022 SEIR-509</footer>
+		</div>
 		<section class="modal-container modal-welcome">
 			<div class="modal-inner">
 				<h2>Welcome to Tamagotchi!</h2>
