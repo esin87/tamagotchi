@@ -1,0 +1,160 @@
+/* Base & Utility Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Open Sans', Helvetica, sans-serif
+}
+
+.wrapper { 
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 { 
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+
+h2 { 
+    font-size: 2rem;
+}
+
+.hide { 
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Flex Styles */
+
+.flex-container { 
+    display: flex;
+}
+
+.space-between { 
+    justify-content: space-between;
+}
+
+/* Game Styles */
+
+.game-container { 
+    background: url('../assets/park-background.webp') no-repeat center center;
+    height: 70vh;
+}
+
+/* Modal Styles */
+.modal-container {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    background-color: rgba(255,255,255, 0.9)
+}
+
+.modal-inner { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9d2c5;
+    padding: 2em;
+    box-shadow: 4px 1px 10px 0px #dadada;
+    border-radius: 4px;
+}
+
+/* Egg Styles  */
+.shadow {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    animation: boingShadow 1s ease-in-out infinite alternate;
+}
+
+.egg {
+    margin: 20px 20px -100px 20px;
+    width: 100px;
+    height: 125px;
+    background-color: #faf3c0;
+    border: 1px solid #000;
+    border-top-left-radius: 50% 60%;
+    border-top-right-radius: 50% 60%;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+    transform-origin: center bottom;
+    animation: boing 1s ease-in-out infinite alternate;
+    box-shadow: inset -5px -10px rgba(168, 164, 176, 0.5);
+}
+
+.spots {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    height: 15px;
+    width: 10px;
+    background-color: #a8a4b0;
+    border-top-left-radius: 60% 60%;
+    border-top-right-radius: 40% 40%;
+    border-bottom-left-radius: 40% 40%;
+    border-bottom-right-radius: 60% 60%;
+}
+
+.spots:before {
+    position: absolute;
+    left: -10px;
+    top: 16px;
+    content: '';
+    display: block;
+    height: 13px;
+    width: 7px;
+    background-color: #a8a4b0;
+    border-top-left-radius: 60% 60%;
+    border-top-right-radius: 40% 40%;
+    border-bottom-left-radius: 40% 40%;
+    border-bottom-right-radius: 60% 60%;
+}
+
+.spots:after {
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    content: '';
+    display: block;
+    height: 10px;
+    width: 5px;
+    background-color: #a8a4b0;
+    border-top-left-radius: 60% 60%;
+    border-top-right-radius: 40% 40%;
+    border-bottom-left-radius: 40% 40%;
+    border-bottom-right-radius: 60% 60%;
+}
+
+@keyframes boing {
+    from {
+        transform: scale(1, 1) translateY(-20px);
+    }
+
+    to {
+        transform: scale(1.2, 0.8) translateY(0px);
+    }
+}
+
+@keyframes boingShadow {
+    from {
+        transform: scale(0.9, 1);
+    }
+
+    to {
+        transform: scale(1.2, 0.8);
+    }
+}
